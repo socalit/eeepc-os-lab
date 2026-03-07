@@ -28,27 +28,44 @@
         <div class="logo">
           <a href="index.html" class="header-logo" style="font-weight:700; font-size:20px;">EeePC 1016P OS Lab</a>
         </div>
-        <div class="mean__menu-wrapper">
+
+        <div class="mean__menu-wrapper d-none d-lg-block">
           <div class="main-menu">
-            <nav id="mobile-menu">
+            <nav>
               <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="news-details.html">Laptop Findings</a></li>
-<li><a href="service.html">Linux Tests</a></li>
-<li><a href="service-2.html">Android Tests</a></li>
-<li><a href="project-2.html">ISO Links</a></li>
-<li><a href="about.html">Methodology</a></li>
-</ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news-details.html">Laptop Findings</a></li>
+                <li><a href="service.html">Linux Tests</a></li>
+                <li><a href="service-2.html">Android Tests</a></li>
+                <li><a href="project-2.html">ISO Links</a></li>
+                <li><a href="about.html">Methodology</a></li>
+              </ul>
             </nav>
           </div>
         </div>
+
         <div class="header-right d-flex justify-content-end align-items-center">
-          <div class="header-button"><a href="project-2.html" class="theme-btn">ISO Links</a></div>
+          <div class="header-button">
+            <a href="project-2.html" class="theme-btn">ISO Links</a>
+          </div>
+
+          <button class="mobile-menu-toggle ms-3 d-lg-none" type="button" onclick="toggleMobileMenu()">
+            ☰
+          </button>
         </div>
       </div>
     </div>
   </div>
 </header>
+
+<div id="mobileMenu" class="mobile-menu d-lg-none">
+  <a href="index.html">Home</a>
+  <a href="news-details.html">Laptop Findings</a>
+  <a href="service.html">Linux Tests</a>
+  <a href="service-2.html">Android Tests</a>
+  <a href="project-2.html">ISO Links</a>
+  <a href="about.html">Methodology</a>
+</div>
 
 <section class="hero-section hero-1 section-padding">
   <div class="container">
@@ -144,5 +161,15 @@
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+function toggleMobileMenu() {
+  var menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
 </body>
 </html>
