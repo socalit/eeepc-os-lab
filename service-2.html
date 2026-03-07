@@ -175,5 +175,29 @@ function toggleMobileMenu() {
   }
 }
 </script>
+<script>
+function toggleMobileMenu() {
+  var menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
+window.addEventListener("scroll", function () {
+
+  const hamburger = document.getElementById("mobileHamburger");
+
+  if (!hamburger) return;
+
+  if (window.scrollY > 10) {
+    hamburger.style.display = "none";
+  } else {
+    hamburger.style.display = "block";
+  }
+
+});
+</script>
 </body>
 </html>
