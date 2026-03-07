@@ -1,0 +1,74 @@
+
+:root{
+  --oslab-bg:#0d1117;
+  --oslab-surface:#161b22;
+  --oslab-card:#1c2128;
+  --oslab-border:#30363d;
+  --oslab-text:#e6edf3;
+  --oslab-muted:#8b949e;
+  --oslab-blue:#58a6ff;
+  --oslab-green:#3fb950;
+  --oslab-amber:#d29922;
+  --oslab-red:#f85149;
+}
+body.body-bg{background:var(--oslab-bg); color:var(--oslab-text);}
+.header-1,.section-bg,.footer-section,.fix-area .offcanvas__info{background-color:#0f141b !important;}
+.header-1 .main-menu ul li a,.header-1 .header-button a,.header-1 .header-logo{color:var(--oslab-text) !important;}
+.header-1{border-bottom:1px solid var(--oslab-border);}
+.hero-section{padding-top:170px; padding-bottom:80px;}
+.oslab-hero-card,.oslab-card,.oslab-panel,.oslab-summary,.news-box-items,.service-box-items,.portfolio-box-items,.team-box-items,.testimonial-box-items{
+  background:var(--oslab-card) !important; border:1px solid var(--oslab-border); border-radius:16px; box-shadow:none;
+}
+.oslab-card,.oslab-panel,.oslab-summary{padding:28px; margin-bottom:24px;}
+.oslab-tag{display:inline-block; padding:6px 12px; border-radius:999px; font-size:13px; font-weight:600; margin:0 8px 8px 0; border:1px solid var(--oslab-border);}
+.oslab-tag.good{background:rgba(63,185,80,.14); color:#7ee787;}
+.oslab-tag.warn{background:rgba(210,153,34,.14); color:#f2cc60;}
+.oslab-tag.bad{background:rgba(248,81,73,.14); color:#ff938a;}
+.oslab-tag.info{background:rgba(88,166,255,.14); color:#9ecbff;}
+.oslab-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px;}
+.oslab-card h3,.oslab-panel h3,.oslab-summary h3{color:var(--oslab-text); margin-bottom:14px;}
+.oslab-card p,.oslab-panel p,.oslab-summary p,.footer-content p,.single-footer-widget p,.about-content p, .service-box-items p,.news-content p{color:var(--oslab-muted) !important;}
+.oslab-card ul,.oslab-panel ul{padding-left:20px;}
+.oslab-card li,.oslab-panel li{margin-bottom:8px; color:var(--oslab-text);}
+.theme-btn.alt{background:transparent; color:var(--oslab-text); border:1px solid var(--oslab-border);}
+.theme-btn{border-radius:999px !important;}
+.oslab-callout{border-left:4px solid var(--oslab-blue); padding:18px 20px; background:rgba(88,166,255,.08); border-radius:10px; margin:20px 0;}
+.oslab-callout.warn{border-left-color:var(--oslab-amber); background:rgba(210,153,34,.08);} 
+.oslab-callout.good{border-left-color:var(--oslab-green); background:rgba(63,185,80,.08);} 
+.oslab-callout.bad{border-left-color:var(--oslab-red); background:rgba(248,81,73,.08);} 
+.oslab-table{width:100%; border-collapse:collapse; margin-top:20px;}
+.oslab-table th,.oslab-table td{border:1px solid var(--oslab-border); padding:14px; vertical-align:top;}
+.oslab-table th{background:#11161d;}
+.oslab-table td{background:var(--oslab-card);}
+.oslab-links a{word-break:break-all;}
+.footer-bottom,.footer-widgets-wrapper{border-color:var(--oslab-border) !important;}
+.single-footer-widget .widget-head h3,.section-title h2,.section-title h6,.hero-content h1,.hero-content p,.content h3 a,.news-content h3 a,.portfolio-box-items .content h3 a,.single-footer-widget a,.contact-text h4 a,.contact-text h5 a{color:var(--oslab-text) !important;}
+.section-title h6{color:var(--oslab-blue) !important;}
+.brand-text h5,.footer-bottom p{color:var(--oslab-muted) !important;}
+.oslab-small{font-size:14px; color:var(--oslab-muted);}
+.oslab-stat{padding:18px; border-radius:14px; background:var(--oslab-card); border:1px solid var(--oslab-border); text-align:center;}
+.oslab-stat h4{margin:0; font-size:28px; color:var(--oslab-text);}
+.oslab-stat span{font-size:13px; color:var(--oslab-muted); display:block; margin-top:6px;}
+@media (max-width:991px){ .hero-section{padding-top:140px;} }
+
+
+.oslab-hero-split{display:grid; grid-template-columns:1.1fr .9fr; gap:36px; align-items:center;}
+.oslab-hero-copy .hero-btn-items{display:flex; gap:14px; flex-wrap:wrap; margin:22px 0 18px;}
+.oslab-hero-tags{margin-top:8px;}
+.oslab-hero-media{display:flex; justify-content:center;}
+.oslab-hero-image{width:100%; max-width:620px; border-radius:22px; border:1px solid var(--oslab-border); background:var(--oslab-card); box-shadow:0 20px 60px rgba(0,0,0,.28);}
+@media (max-width:991px){.oslab-hero-split{grid-template-columns:1fr;}.oslab-hero-media{order:-1;}}
+/* Header button styling */
+
+.header-button .theme-btn {
+    background-color: #c0f748 !important;
+    color: #0d1117 !important;
+    border: 1px solid #a7da36 !important;
+    font-weight: 600;
+}
+
+.header-button .theme-btn:hover {
+    background-color: #a7da36 !important;
+    color: #0d1117 !important;
+    border: 1px solid #8fbf2e !important;
+}
