@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Fausto Mendoza">
+<meta name="description" content="ASUS EeePC 1016P operating system findings, working apps, limitations, and ISO download links.">
+<title>Laptop Findings - EeePC 1016P OS Lab</title>
+<link rel="shortcut icon" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/meanmenu.css">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/color.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/oslab.css">
+</head>
+<body class="body-bg">
+<button id="back-top" class="back-to-top"><i class="fa-regular fa-arrow-up"></i></button>
+<header id="header-sticky" class="header-1">
+  <div class="container">
+    <div class="mega-menu-wrapper">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html" class="header-logo" style="font-weight:700; font-size:24px;">EeePC 1016P OS Lab</a>
+        </div>
+        <div class="mean__menu-wrapper">
+          <div class="main-menu">
+            <nav id="mobile-menu">
+              <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="news-details.html">Laptop Findings</a></li>
+<li><a href="service.html">Linux Tests</a></li>
+<li><a href="service-2.html">Android Tests</a></li>
+<li><a href="project-2.html">ISO Links</a></li>
+<li><a href="about.html">Methodology</a></li>
+</ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header-right d-flex justify-content-end align-items-center">
+          <div class="header-button"><a href="project-2.html" class="theme-btn">ISO Links</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero-section hero-1 section-padding">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Full ASUS EeePC 1016P findings</h1>
+      <p>The overall results, what actually worked, which Android builds failed, and the repeated limitations that showed up across nearly every test.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding pt-0">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="oslab-panel">
+          <h3>Hardware profile</h3>
+          <table class="oslab-table">
+            <tr><th>Laptop</th><td>ASUS EeePC 1016P</td></tr>
+            <tr><th>CPU</th><td>Intel Atom N455</td></tr>
+            <tr><th>Cores / threads</th><td>1 core / 2 threads</td></tr>
+            <tr><th>Main limitations</th><td>Weak single-core CPU performance, 32-bit software and DRM limits, browser overhead, and outdated app support on old Android builds</td></tr>
+            <tr><th>Best current result</th><td>Android-x86 7.1 R5 with Smart Dock from F-Droid</td></tr>
+          </table>
+          <div class="oslab-callout warn"><strong>Main lesson:</strong> this project stopped being about whether an OS could install. The real question was whether the laptop could still do useful things after booting. The CPU was the biggest wall.</div>
+          <h3>What consistently failed</h3>
+          <ul>
+            <li>Spotify on 32-bit Linux because DRM support was not available in a practical way.</li>
+            <li>YouTube at anything above very low resolution because the Atom CPU hit its limit quickly.</li>
+            <li>Modern Android-x86 forks that expected more CPU than a single-core Atom could provide.</li>
+            <li>Upgrading from Android-x86 4.0 R2 EeePC to 7.1 R5 in place. It broke the OS and forced a fresh install.</li>
+          </ul>
+          <h3>Android alternatives that could not be fully tested</h3>
+          <div class="oslab-callout bad"><strong>Bliss OS:</strong> loaded poorly, became unstable, and kept crashing. The CPU was not enough for it.</div>
+          <div class="oslab-callout bad"><strong>PrimeOS:</strong> booted but was unstable and too heavy to fully evaluate. The Atom N455 did not have enough processing headroom.</div>
+          <div class="oslab-callout bad"><strong>Phoenix OS:</strong> also unstable on this hardware. It crashed before useful app testing could be completed.</div>
+          <h3>Best practical configuration</h3>
+          <p>The best real-world setup was a clean install of Android-x86 7.1 R5 plus Smart Dock from F-Droid. That gave the laptop a more usable desktop-style launcher and let several key apps continue working.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="oslab-panel">
+          <h3>Apps that worked on Android-x86 7.1 R5</h3>
+          <ul>
+            <li>Spotify</li>
+            <li>Discord</li>
+            <li>ChatGPT</li>
+            <li>VLC</li>
+            <li>RetroArch</li>
+            <li>FX File Manager</li>
+            <li>Chrome, with limitations</li>
+          </ul>
+        </div>
+        <div class="oslab-panel">
+          <h3>Apps or updates that failed</h3>
+          <ul>
+            <li>YouTube app no longer supported</li>
+            <li>Updated Chrome crashed</li>
+            <li>Netflix crashed</li>
+            <li>Plex crashed</li>
+          </ul>
+        </div>
+        <div class="oslab-panel">
+          <h3>Quick verdict</h3>
+          <p>Best overall: Android-x86 7.1 R5</p>
+          <p>Best Linux feel: Linux Mint 32-bit</p>
+          <p>Most responsive Linux: MX Linux</p>
+          <p>Best hardware support: antiX</p>
+          <p>Best specialist use: Kali for terminal/network tools</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section section-bg fix">
+  <div class="container">
+    <div class="footer-bottom">
+      <div class="footer-bottom-wrapper">
+        <p>EeePC 1016P OS Lab</p>
+        <p>Real-world ASUS EeePC 1016P operating system findings and limitations.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/viewport.jquery.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.waypoints.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

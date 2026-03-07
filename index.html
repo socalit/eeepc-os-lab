@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Fausto Mendoza">
+<meta name="description" content="ASUS EeePC 1016P operating system findings, working apps, limitations, and ISO download links.">
+<title>EeePC 1016P OS Lab</title>
+<link rel="shortcut icon" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/meanmenu.css">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/color.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/oslab.css">
+</head>
+<body class="body-bg">
+<button id="back-top" class="back-to-top"><i class="fa-regular fa-arrow-up"></i></button>
+<header id="header-sticky" class="header-1">
+  <div class="container">
+    <div class="mega-menu-wrapper">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html" class="header-logo" style="font-weight:700; font-size:24px;">EeePC 1016P OS Lab</a>
+        </div>
+        <div class="mean__menu-wrapper">
+          <div class="main-menu">
+            <nav id="mobile-menu">
+              <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="news-details.html">Laptop Findings</a></li>
+<li><a href="service.html">Linux Tests</a></li>
+<li><a href="service-2.html">Android Tests</a></li>
+<li><a href="project-2.html">ISO Links</a></li>
+<li><a href="about.html">Methodology</a></li>
+</ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header-right d-flex justify-content-end align-items-center">
+          <div class="header-button"><a href="project-2.html" class="theme-btn">ISO Links</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero-section hero-1 section-padding">
+  <div class="container">
+    <div class="hero-content oslab-hero-split">
+      <div class="oslab-hero-copy">
+        <span class="oslab-tag info">ASUS EeePC 1016P</span>
+        <h1>Real operating system findings for the ASUS EeePC 1016P</h1>
+        <p>I tested Linux and Android builds on the EeePC 1016P to document what actually worked, what apps still ran, and where the Atom N455 CPU became the hard limit.</p>
+        <div class="hero-btn-items">
+          <a href="news-details.html" class="theme-btn">Read full findings</a>
+          <a href="project-2.html" class="theme-btn alt">See limitations</a>
+        </div>
+        <div class="oslab-hero-tags">
+          <span class="oslab-tag good">Best result: Android-x86 7.1 R5</span>
+          <span class="oslab-tag warn">Main bottleneck: Atom N455 CPU</span>
+          <span class="oslab-tag bad">Modern Android forks unstable</span>
+        </div>
+      </div>
+      <div class="oslab-hero-media">
+        <img src="assets/img/hero/eeepc-hero-placeholder.png" alt="ASUS EeePC 1016P hero image placeholder" class="img-fluid oslab-hero-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding pt-0">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-md-3"><div class="oslab-stat"><h4>11</h4><span>Operating systems tried</span></div></div>
+      <div class="col-md-3"><div class="oslab-stat"><h4>1</h4><span>Best practical result</span></div></div>
+      <div class="col-md-3"><div class="oslab-stat"><h4>32-bit</h4><span>Linux software wall</span></div></div>
+      <div class="col-md-3"><div class="oslab-stat"><h4>Atom N455</h4><span>Main CPU bottleneck</span></div></div>
+    </div>
+    <div class="oslab-callout good"><strong>Best result:</strong> Android-x86 7.1 R5 was the best practical option for this netbook. Spotify worked, Chrome could handle YouTube at 240p, and several useful apps still ran. The biggest overall limitation across the project was the Intel Atom N455 CPU with 1 core and 2 threads.</div>
+    <div class="oslab-grid">
+      <div class="oslab-card">
+        <h3>Android-x86 7.1 R5</h3>
+        <span class="oslab-tag good">Best option</span><span class="oslab-tag info">Spotify works</span><span class="oslab-tag warn">240p YouTube</span>
+        <p>A fresh install of 7.1 R5 beat every Linux and Android alternative tested. Smart Dock from F-Droid made the laptop much easier to use.</p>
+        <a href="service-2.html" class="theme-btn">See Android results</a>
+      </div>
+      <div class="oslab-card">
+        <h3>Linux results</h3>
+        <span class="oslab-tag info">Mint 32-bit</span><span class="oslab-tag info">MX</span><span class="oslab-tag info">antiX</span><span class="oslab-tag info">Kali</span>
+        <p>Linux Mint 32-bit gave a modern desktop, MX felt dated but responsive, antiX had good hardware support, and Kali made sense only as a terminal and network-tools box. DRM and CPU limits hurt media use across the board.</p>
+        <a href="service.html" class="theme-btn">See Linux results</a>
+      </div>
+      <div class="oslab-card">
+        <h3>Failed Android alternatives</h3>
+        <span class="oslab-tag bad">Bliss OS</span><span class="oslab-tag bad">PrimeOS</span><span class="oslab-tag bad">Phoenix OS</span>
+        <p>These builds were too heavy for the Atom N455. They loaded poorly, crashed, and could not be fully tested. The main limitation was CPU, not just RAM.</p>
+        <a href="news-details.html" class="theme-btn">Read full findings</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding pt-0">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="oslab-panel">
+          <h3>Working apps on Android-x86 7.1 R5</h3>
+          <ul>
+            <li>Spotify</li>
+            <li>Discord</li>
+            <li>ChatGPT</li>
+            <li>VLC</li>
+            <li>RetroArch</li>
+            <li>FX File Manager</li>
+            <li>Chrome, with limitations and no current updates</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="oslab-panel">
+          <h3>Main limitations discovered</h3>
+          <ul>
+            <li>Atom N455 CPU is the main bottleneck: 1 core, 2 threads.</li>
+            <li>Most 32-bit Linux installs hit DRM issues for Spotify.</li>
+            <li>YouTube was limited to about 240p and often buffered.</li>
+            <li>Updated Chrome, Netflix, and Plex crashed on Android-x86 7.1 R5.</li>
+            <li>The old Android-x86 4.0 R2 EeePC build had working shortcuts but was too outdated to use.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section section-bg fix">
+  <div class="container">
+    <div class="footer-bottom">
+      <div class="footer-bottom-wrapper">
+        <p>EeePC 1016P OS Lab</p>
+        <p>Real-world ASUS EeePC 1016P operating system findings and limitations.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/viewport.jquery.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.waypoints.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Fausto Mendoza">
+<meta name="description" content="ASUS EeePC 1016P operating system findings, working apps, limitations, and ISO download links.">
+<title>Linux Results - EeePC 1016P OS Lab</title>
+<link rel="shortcut icon" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/meanmenu.css">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/color.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/oslab.css">
+</head>
+<body class="body-bg">
+<button id="back-top" class="back-to-top"><i class="fa-regular fa-arrow-up"></i></button>
+<header id="header-sticky" class="header-1">
+  <div class="container">
+    <div class="mega-menu-wrapper">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html" class="header-logo" style="font-weight:700; font-size:24px;">EeePC 1016P OS Lab</a>
+        </div>
+        <div class="mean__menu-wrapper">
+          <div class="main-menu">
+            <nav id="mobile-menu">
+              <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="news-details.html">Laptop Findings</a></li>
+<li><a href="service.html">Linux Tests</a></li>
+<li><a href="service-2.html">Android Tests</a></li>
+<li><a href="project-2.html">ISO Links</a></li>
+<li><a href="about.html">Methodology</a></li>
+</ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header-right d-flex justify-content-end align-items-center">
+          <div class="header-button"><a href="project-2.html" class="theme-btn">ISO Links</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero-section hero-1 section-padding">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Linux test results on the ASUS EeePC 1016P</h1>
+      <p>What each Linux distro felt like on the EeePC 1016P, what worked, and where the Atom CPU and 32-bit limitations got in the way.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding pt-0">
+  <div class="container">
+    <div class="oslab-callout warn"><strong>Linux summary:</strong> several Linux distros installed and ran, but all of them hit the same practical wall: 32-bit DRM problems for Spotify and a CPU bottleneck that made modern browsing and YouTube hard.</div>
+    <div class="oslab-grid">
+      <div class="oslab-card">
+        <h3>Linux Mint 32-bit</h3>
+        <span class="oslab-tag good">Modern desktop</span><span class="oslab-tag info">Low memory use</span><span class="oslab-tag warn">High CPU per task</span>
+        <ul>
+          <li>Modern desktop feel and attractive icons.</li>
+          <li>Did not feel heavy on memory.</li>
+          <li>CPU usage spiked hard even for a single modern task.</li>
+          <li>Spotify could not be used because DRM support was not available on 32-bit.</li>
+          <li>YouTube could play at 240p, but buffering was common.</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>MX Linux</h3>
+        <span class="oslab-tag good">Responsive</span><span class="oslab-tag warn">Feels dated</span>
+        <ul>
+          <li>The interface felt dated compared to Mint.</li>
+          <li>Responsiveness was good for this laptop class.</li>
+          <li>Still ran into the same CPU bottleneck with modern browsing.</li>
+          <li>Not a streaming-friendly setup on this netbook.</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>antiX</h3>
+        <span class="oslab-tag good">Good hardware support</span><span class="oslab-tag warn">CPU wall remains</span>
+        <ul>
+          <li>Hardware support was good on the EeePC.</li>
+          <li>Still hit the same Spotify DRM problem on 32-bit.</li>
+          <li>Still hit the same CPU bottlenecks as the other Linux distros.</li>
+          <li>Useful if the goal is a very lightweight Linux environment, not media use.</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>Kali Linux</h3>
+        <span class="oslab-tag info">Network tools</span><span class="oslab-tag warn">Not for media</span>
+        <ul>
+          <li>Good if the goal is terminal work and network tools.</li>
+          <li>Not a good daily media OS on this hardware.</li>
+          <li>YouTube and Spotify remained poor choices because of CPU limits and 32-bit DRM issues.</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>Puppy Linux</h3>
+        <span class="oslab-tag info">Lightweight candidate</span><span class="oslab-tag warn">Same browsing wall</span>
+        <ul>
+          <li>Worth testing because it is lightweight.</li>
+          <li>The laptop still runs into the same modern browser and CPU limits.</li>
+          <li>Lightweight alone does not solve the Atom bottleneck.</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>Lubuntu</h3>
+        <span class="oslab-tag info">Reasonable legacy option</span><span class="oslab-tag warn">Streaming still weak</span>
+        <ul>
+          <li>A sensible old-hardware Ubuntu-style option to test.</li>
+          <li>Still limited by the same weak CPU and 32-bit ecosystem issues.</li>
+          <li>More viable as a light desktop than as a streaming machine.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section section-bg fix">
+  <div class="container">
+    <div class="footer-bottom">
+      <div class="footer-bottom-wrapper">
+        <p>EeePC 1016P OS Lab</p>
+        <p>Real-world ASUS EeePC 1016P operating system findings and limitations.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/viewport.jquery.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.waypoints.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

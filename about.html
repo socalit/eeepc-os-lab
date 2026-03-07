@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Fausto Mendoza">
+<meta name="description" content="ASUS EeePC 1016P operating system findings, working apps, limitations, and ISO download links.">
+<title>Methodology - EeePC 1016P OS Lab</title>
+<link rel="shortcut icon" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/meanmenu.css">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/color.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/oslab.css">
+</head>
+<body class="body-bg">
+<button id="back-top" class="back-to-top"><i class="fa-regular fa-arrow-up"></i></button>
+<header id="header-sticky" class="header-1">
+  <div class="container">
+    <div class="mega-menu-wrapper">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html" class="header-logo" style="font-weight:700; font-size:24px;">EeePC 1016P OS Lab</a>
+        </div>
+        <div class="mean__menu-wrapper">
+          <div class="main-menu">
+            <nav id="mobile-menu">
+              <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="news-details.html">Laptop Findings</a></li>
+<li><a href="service.html">Linux Tests</a></li>
+<li><a href="service-2.html">Android Tests</a></li>
+<li><a href="project-2.html">ISO Links</a></li>
+<li><a href="about.html">Methodology</a></li>
+</ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header-right d-flex justify-content-end align-items-center">
+          <div class="header-button"><a href="project-2.html" class="theme-btn">ISO Links</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero-section hero-1 section-padding">
+  <div class="container">
+    <div class="hero-content">
+      <h1>How this EeePC 1016P test site is organized</h1>
+      <p>This page explains what the project is documenting, how the tests were judged, and why app support and CPU limits mattered more than just reaching a desktop.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding pt-0">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="oslab-panel">
+          <h3>What this project documents</h3>
+          <p>This site is focused on one laptop: the ASUS EeePC 1016P. The goal is not to list every distro in theory. The goal is to show what actually happened on the hardware, which apps still worked, and where the bottlenecks showed up.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="oslab-panel">
+          <h3>How the results are judged</h3>
+          <p>These are real-world findings, not synthetic benchmarks. Streaming support, browser behavior, app compatibility, keyboard shortcuts, and crash behavior mattered more than whether an installer simply booted.</p>
+        </div>
+      </div>
+    </div>
+    <div class="oslab-panel">
+      <h3>Methodology</h3>
+      <ul>
+        <li>Install operating systems that are realistic candidates for Atom-era netbooks.</li>
+        <li>Check whether the system is actually usable after install, not just whether it boots.</li>
+        <li>Record modern app and browser limits, especially streaming and DRM issues.</li>
+        <li>Document which Android builds were too heavy to fully test because of the CPU.</li>
+        <li>Favor practical outcomes: what lets the laptop do useful work today.</li>
+      </ul>
+      <div class="oslab-callout info"><strong>Key interpretation rule:</strong> when Bliss OS, PrimeOS, and Phoenix OS failed to run well, that was documented as a hardware limitation first. The Atom N455 CPU with 1 core and 2 threads is the main ceiling on this machine.</div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="oslab-panel">
+          <h3>What counted as success</h3>
+          <ul>
+            <li>OS installed cleanly</li>
+            <li>UI stayed stable</li>
+            <li>Apps could be launched and used</li>
+            <li>Basic media tasks were possible</li>
+            <li>Keyboard shortcuts and laptop-specific behavior worked where relevant</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="oslab-panel">
+          <h3>What counted as failure or limitation</h3>
+          <ul>
+            <li>Repeated crashes or instability</li>
+            <li>Unsupported apps or broken APIs</li>
+            <li>DRM blocks on 32-bit Linux</li>
+            <li>Browser updates that made the system unusable</li>
+            <li>CPU saturation that prevented normal daily use</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section section-bg fix">
+  <div class="container">
+    <div class="footer-bottom">
+      <div class="footer-bottom-wrapper">
+        <p>EeePC 1016P OS Lab</p>
+        <p>Real-world ASUS EeePC 1016P operating system findings and limitations.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/viewport.jquery.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.waypoints.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

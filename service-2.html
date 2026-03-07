@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Fausto Mendoza">
+<meta name="description" content="ASUS EeePC 1016P operating system findings, working apps, limitations, and ISO download links.">
+<title>Android Results - EeePC 1016P OS Lab</title>
+<link rel="shortcut icon" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/meanmenu.css">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/color.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/oslab.css">
+</head>
+<body class="body-bg">
+<button id="back-top" class="back-to-top"><i class="fa-regular fa-arrow-up"></i></button>
+<header id="header-sticky" class="header-1">
+  <div class="container">
+    <div class="mega-menu-wrapper">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html" class="header-logo" style="font-weight:700; font-size:24px;">EeePC 1016P OS Lab</a>
+        </div>
+        <div class="mean__menu-wrapper">
+          <div class="main-menu">
+            <nav id="mobile-menu">
+              <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="news-details.html">Laptop Findings</a></li>
+<li><a href="service.html">Linux Tests</a></li>
+<li><a href="service-2.html">Android Tests</a></li>
+<li><a href="project-2.html">ISO Links</a></li>
+<li><a href="about.html">Methodology</a></li>
+</ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header-right d-flex justify-content-end align-items-center">
+          <div class="header-button"><a href="project-2.html" class="theme-btn">ISO Links</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero-section hero-1 section-padding">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Android results on the ASUS EeePC 1016P</h1>
+      <p>The Android-x86 builds that were tested, what still worked, and which newer Android desktop forks were simply too heavy for the Atom N455.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding pt-0">
+  <div class="container">
+    <div class="oslab-callout good"><strong>Android summary:</strong> Android-x86 7.1 R5 was the clear winner. The old Android-x86 4.0 R2 EeePC image had great shortcut support but was too outdated to use. Bliss OS, PrimeOS, and Phoenix OS were too heavy for the CPU and crashed.</div>
+    <div class="oslab-grid">
+      <div class="oslab-card">
+        <h3>Android-x86 4.0 R2 EeePC</h3>
+        <span class="oslab-tag good">Fn shortcuts work</span><span class="oslab-tag bad">Too outdated</span>
+        <ul>
+          <li>Shortcut keys and volume controls worked well.</li>
+          <li>Browsers were out of date and app APIs were broken.</li>
+          <li>Apps were no longer practically usable because support had moved on.</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>Android-x86 7.1 R5</h3>
+        <span class="oslab-tag good">Best option</span><span class="oslab-tag info">Spotify works</span><span class="oslab-tag warn">Some apps crash</span>
+        <ul>
+          <li>Trying to upgrade from Android-x86 4.0 R2 EeePC broke the OS.</li>
+          <li>A clean install of 7.1 R5 was required.</li>
+          <li>Smart Dock from F-Droid made the experience much better.</li>
+          <li>Chrome could play YouTube at 240p, but the YouTube app itself was no longer supported.</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>Working apps on 7.1 R5</h3>
+        <span class="oslab-tag good">Usable set</span>
+        <ul>
+          <li>Spotify</li>
+          <li>Discord</li>
+          <li>ChatGPT</li>
+          <li>VLC</li>
+          <li>RetroArch</li>
+          <li>FX File Manager</li>
+          <li>Chrome, with limitations and no current update path</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>Apps that failed on 7.1 R5</h3>
+        <span class="oslab-tag bad">Crashes</span>
+        <ul>
+          <li>Updated Chrome crashed</li>
+          <li>Netflix crashed</li>
+          <li>Plex crashed</li>
+          <li>YouTube app unsupported</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>Bliss OS</h3>
+        <span class="oslab-tag bad">Too heavy</span><span class="oslab-tag bad">Crashes</span>
+        <ul>
+          <li>Could not be fully tested.</li>
+          <li>Loaded poorly and kept crashing.</li>
+          <li>Main limitation was the Atom N455 CPU.</li>
+        </ul>
+      </div>
+      <div class="oslab-card">
+        <h3>PrimeOS and Phoenix OS</h3>
+        <span class="oslab-tag bad">Too heavy</span><span class="oslab-tag bad">Unstable</span>
+        <ul>
+          <li>Both were too much for a 1-core / 2-thread Atom.</li>
+          <li>They were unstable and could not be meaningfully evaluated.</li>
+          <li>The limitation was CPU first, not just the overall age of the laptop.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section section-bg fix">
+  <div class="container">
+    <div class="footer-bottom">
+      <div class="footer-bottom-wrapper">
+        <p>EeePC 1016P OS Lab</p>
+        <p>Real-world ASUS EeePC 1016P operating system findings and limitations.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/viewport.jquery.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.waypoints.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
