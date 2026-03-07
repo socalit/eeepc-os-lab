@@ -58,7 +58,6 @@ body.body-bg{background:var(--oslab-bg); color:var(--oslab-text);}
 .oslab-hero-media{display:flex; justify-content:center;}
 .oslab-hero-image{width:100%; max-width:620px; border-radius:22px; border:1px solid var(--oslab-border); background:var(--oslab-card); box-shadow:0 20px 60px rgba(0,0,0,.28);}
 @media (max-width:991px){.oslab-hero-split{grid-template-columns:1fr;}.oslab-hero-media{order:-1;}}
-/* Header button styling */
 
 .header-button .theme-btn {
     background-color: #c0f748 !important;
@@ -71,4 +70,38 @@ body.body-bg{background:var(--oslab-bg); color:var(--oslab-text);}
     background-color: #a7da36 !important;
     color: #0d1117 !important;
     border: 1px solid #8fbf2e !important;
+
+}
+.mobile-menu-toggle {
+    background: #c0f748;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    padding: 8px 12px;
+    color: #0d1117;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    background: #0d1117;
+    border-top: 1px solid #30363d;
+    padding: 12px 20px;
+}
+
+.mobile-menu a {
+    display: block;
+    color: #e6edf3;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #30363d;
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu a:hover {
+    color: #c0f748;
 }
