@@ -73,7 +73,7 @@
       <div class="oslab-hero-copy">
         <span class="oslab-tag info">ASUS EeePC 1016P</span>
         <h1>Real operating system findings for the ASUS EeePC 1016P</h1>
-        <p>I tested Linux and Android builds on the EeePC 1016P to document what actually worked, what apps still ran, and where the Intel Atom N455 CPU became the hard limit.</p>
+        <p>Eleven operating systems, one aging netbook. This site documents what ran, what crashed, and which apps survived on the Intel Atom N455 hardware.</p>
         <div class="hero-btn-items">
           <a href="news-details.html" class="theme-btn">Read full findings</a>
           <a href="project-2.html" class="theme-btn alt">See limitations</a>
@@ -85,7 +85,7 @@
         </div>
       </div>
       <div class="oslab-hero-media">
-        <img src="assets/img/hero/eeepc-hero-placeholder.png" alt="ASUS EeePC 1016P hero image placeholder" class="img-fluid oslab-hero-image">
+        <img src="assets/img/netbook/main.jpg" alt="ASUS EeePC 1016P laptop" class="img-fluid oslab-hero-image">
       </div>
     </div>
   </div>
@@ -94,29 +94,58 @@
 <section class="section-padding pt-0">
   <div class="container">
     <div class="row g-4 mb-5">
-      <div class="col-md-3"><div class="oslab-stat"><h4>11</h4><span>Operating systems tried</span></div></div>
-      <div class="col-md-3"><div class="oslab-stat"><h4>1</h4><span>Best practical result</span></div></div>
-      <div class="col-md-3"><div class="oslab-stat"><h4>32-bit</h4><span>X86 software wall</span></div></div>
-      <div class="col-md-3"><div class="oslab-stat"><h4>Intel Atom N455</h4><span>Main CPU bottleneck</span></div></div>
+      <div class="col-md-3"><div class="oslab-stat"><img src="assets/img/icon/01.svg" alt="" class="oslab-stat-icon"><h4>11</h4><span>Operating systems tried</span></div></div>
+      <div class="col-md-3"><div class="oslab-stat"><img src="assets/img/icon/03.svg" alt="" class="oslab-stat-icon"><h4>1</h4><span>Best practical result</span></div></div>
+      <div class="col-md-3"><div class="oslab-stat"><img src="assets/img/icon/04.svg" alt="" class="oslab-stat-icon"><h4>32-bit</h4><span>X86 software wall</span></div></div>
+      <div class="col-md-3"><div class="oslab-stat"><img src="assets/img/icon/06.svg" alt="" class="oslab-stat-icon"><h4>Intel Atom N455</h4><span>Main CPU bottleneck</span></div></div>
     </div>
     <div class="oslab-callout good"><strong>Best result:</strong> Android-x86 7.1 R5 was the best practical option for this netbook. Spotify worked, Chrome could handle YouTube at 240p, and several useful apps still ran. The biggest overall limitation across the project was the Intel Atom N455 CPU with 1 core and 2 threads.</div>
-    <div class="oslab-grid">
+    <div class="oslab-photo-grid">
+      <figure>
+        <a href="assets/img/netbook/top-down.jpg" class="oslab-lightbox" title="Top-down view">
+          <img src="assets/img/netbook/top-down.jpg" alt="EeePC 1016P top-down view">
+        </a>
+        <figcaption>Top-down view</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/img/netbook/left-io.jpg" class="oslab-lightbox" title="Left I/O ports">
+          <img src="assets/img/netbook/left-io.jpg" alt="EeePC 1016P left I/O ports">
+        </a>
+        <figcaption>Left I/O ports</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/img/netbook/right-io.jpg" class="oslab-lightbox" title="Right I/O ports">
+          <img src="assets/img/netbook/right-io.jpg" alt="EeePC 1016P right I/O ports">
+        </a>
+        <figcaption>Right I/O ports</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/img/netbook/back.jpg" class="oslab-lightbox" title="Back panel">
+          <img src="assets/img/netbook/back.jpg" alt="EeePC 1016P back">
+        </a>
+        <figcaption>Back panel</figcaption>
+      </figure>
+    </div>
+    <div class="oslab-grid" style="margin-top:36px;">
       <div class="oslab-card">
+        <img src="assets/img/icon/android.png" alt="Android" class="oslab-card-icon">
         <h3>Android-x86 7.1 R5</h3>
         <span class="oslab-tag good">Best option</span><span class="oslab-tag info">Spotify works</span><span class="oslab-tag warn">240p YouTube</span>
-        <p>A fresh install of 7.1 R5 beat every Linux and Android alternative tested. Smart Dock from F-Droid made the laptop much easier to use.</p>
+        <p>After every other candidate was ruled out, 7.1 R5 on a clean install stood alone. Adding Smart Dock via F-Droid turned it into something genuinely usable day to day.</p>
         <a href="service-2.html" class="theme-btn">See Android results</a>
       </div>
       <div class="oslab-card">
+        <img src="assets/img/icon/linux.png" alt="Linux" class="oslab-card-icon">
         <h3>Linux results</h3>
         <span class="oslab-tag info">Mint 32-bit</span><span class="oslab-tag info">MX</span><span class="oslab-tag info">antiX</span><span class="oslab-tag info">Kali</span>
-        <p>Linux Mint 32-bit gave a modern desktop, MX felt dated but responsive, antiX had good hardware support, and Kali made sense only as a terminal and network-tools box. DRM and CPU limits hurt media use across the board.</p>
+        <p>Mint looked the most current, MX handled responsively despite its older look, and antiX fit the hardware well. Kali had a narrower use case here. Across all of them, media streaming ran into the same two walls: the processor and 32-bit DRM.</p>
         <a href="service.html" class="theme-btn">See Linux results</a>
       </div>
       <div class="oslab-card">
+        <img src="assets/img/icon/laptop.png" alt="Laptop" class="oslab-card-icon">
         <h3>Failed Android alternatives</h3>
         <span class="oslab-tag bad">Bliss OS</span><span class="oslab-tag bad">PrimeOS</span><span class="oslab-tag bad">Phoenix OS</span>
-        <p>These builds were too heavy for the Atom N455. They loaded poorly, crashed, and could not be fully tested. The main limitation was CPU, not just RAM.</p>
+        <p>Bliss OS, PrimeOS, and Phoenix OS each assumed hardware the EeePC doesn't have. None of them stabilized enough to evaluate properly — the issue wasn't storage or RAM, it was processing power.</p>
         <a href="news-details.html" class="theme-btn">Read full findings</a>
       </div>
     </div>
@@ -128,6 +157,7 @@
     <div class="row g-4">
       <div class="col-lg-6">
         <div class="oslab-panel">
+          <img src="assets/img/icon/05.svg" alt="" class="oslab-card-icon">
           <h3>Working apps on Android-x86 7.1 R5</h3>
           <ul>
             <li>Spotify</li>
@@ -142,13 +172,14 @@
       </div>
       <div class="col-lg-6">
         <div class="oslab-panel">
+          <img src="assets/img/icon/06.svg" alt="" class="oslab-card-icon">
           <h3>Main limitations discovered</h3>
           <ul>
-            <li>Atom N455 CPU is the main bottleneck: 1 core, 2 threads.</li>
-            <li>Most 32-bit Linux installs hit DRM issues for Spotify.</li>
-            <li>YouTube was limited to about 240p and often buffered.</li>
-            <li>Updated Chrome, Netflix, and Plex crashed on Android-x86 7.1 R5.</li>
-            <li>The old Android-x86 4.0 R2 EeePC build had working shortcuts but was too outdated to use.</li>
+            <li>Single-core performance: the N455 runs one core at 1.66 GHz with two threads — that ceiling touches everything.</li>
+            <li>Spotify needs Widevine DRM, which has no 32-bit Linux support. Every distro confirmed this.</li>
+            <li>Video playback topped out around 240p in Chrome; anything higher stalled.</li>
+            <li>Streaming apps requiring newer APIs — Netflix, Plex, and current Chrome builds — all crashed.</li>
+            <li>The EeePC-specific Android 4.0 build had native shortcut key support, but its software stack was too far behind to be practical.</li>
           </ul>
         </div>
       </div>
@@ -196,6 +227,18 @@ function toggleMobileMenu() {
     menu.style.display = "block";
   }
 }
+
+$(document).ready(function () {
+  $('.oslab-photo-grid').magnificPopup({
+    delegate: 'a.oslab-lightbox',
+    type: 'image',
+    gallery: { enabled: true },
+    image: { titleSrc: 'title' },
+    removalDelay: 200,
+    mainClass: 'mfp-with-zoom',
+    zoom: { enabled: true, duration: 220, easing: 'ease-in-out' }
+  });
+});
 
 window.addEventListener("scroll", function () {
 

@@ -71,7 +71,7 @@
   <div class="container">
     <div class="hero-content">
       <h1>Full ASUS EeePC 1016P findings</h1>
-      <p>The overall results, what actually worked, which Android builds failed, and the repeated limitations that showed up across nearly every test.</p>
+      <p>Hardware specs, test outcomes, and a breakdown of which operating systems held up and which ones the Atom N455 turned away at the door.</p>
     </div>
   </div>
 </section>
@@ -143,20 +143,20 @@ Weak single-core CPU performance, limited GPU acceleration, 32-bit software rest
 </tr>
 
 </table>
-          <div class="oslab-callout warn"><strong>Main lesson:</strong> this project stopped being about whether an OS could install. The real question was whether the laptop could still do useful things after booting. The CPU was the biggest wall.</div>
+          <div class="oslab-callout warn"><strong>Main lesson:</strong> getting to a desktop was never the hard part. The question became: what can you actually do once you're there? On a single-core 1.66 GHz processor, that list narrows fast.</div>
           <h3>What consistently failed</h3>
           <ul>
-            <li>Spotify on 32-bit Linux because DRM support was not available in a practical way.</li>
-            <li>YouTube at anything above very low resolution because the Atom CPU hit its limit quickly.</li>
-            <li>Modern Android-x86 forks that expected more CPU than a single-core Atom could provide.</li>
-            <li>Upgrading from Android-x86 4.0 R2 EeePC to 7.1 R5 in place. It broke the OS and forced a fresh install.</li>
+            <li>Spotify on any 32-bit Linux install — Widevine DRM simply has no supported 32-bit path.</li>
+            <li>Video beyond the lowest quality tiers; the processor saturates before the stream can stabilize.</li>
+            <li>Android-x86 forks built for multi-core machines — Bliss OS, PrimeOS, and Phoenix OS all assumed headroom the N455 doesn't have.</li>
+            <li>In-place upgrades from the old 4.0 R2 EeePC image to 7.1 R5 — the upgrade path corrupted the install. Only a clean install worked.</li>
           </ul>
           <h3>Android alternatives that could not be fully tested</h3>
-          <div class="oslab-callout bad"><strong>Bliss OS:</strong> loaded poorly, became unstable, and kept crashing. The CPU was not enough for it.</div>
-          <div class="oslab-callout bad"><strong>PrimeOS:</strong> booted but was unstable and too heavy to fully evaluate. The Atom N455 did not have enough processing headroom.</div>
-          <div class="oslab-callout bad"><strong>Phoenix OS:</strong> also unstable on this hardware. It crashed before useful app testing could be completed.</div>
+          <div class="oslab-callout bad"><strong>Bliss OS:</strong> stalled during setup, crashed repeatedly, and never reached a stable desktop. The N455 doesn't meet the processing floor Bliss expects.</div>
+          <div class="oslab-callout bad"><strong>PrimeOS:</strong> reached the desktop but wouldn't hold together long enough for meaningful app testing. The constraint was CPU, not storage or memory.</div>
+          <div class="oslab-callout bad"><strong>Phoenix OS:</strong> behaved similarly — unstable from the start, and crashed out before any app could be evaluated.</div>
           <h3>Best practical configuration</h3>
-          <p>The best real-world setup was a clean install of Android-x86 7.1 R5 plus Smart Dock from F-Droid. That gave the laptop a more usable desktop-style launcher and let several key apps continue working.</p>
+          <p>A clean install of Android-x86 7.1 R5 with Smart Dock added from F-Droid. Smart Dock replaced the default launcher with a proper desktop layout, which made the EeePC feel like an actual computer rather than a phone running sideways.</p>
         </div>
       </div>
       <div class="col-lg-4">

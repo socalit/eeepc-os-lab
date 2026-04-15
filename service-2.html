@@ -71,32 +71,32 @@
   <div class="container">
     <div class="hero-content">
       <h1>Android results on the ASUS EeePC 1016P</h1>
-      <p>The Android-x86 builds that were tested, what still worked, and which newer Android desktop forks were simply too heavy for the Atom N455.</p>
+      <p>A breakdown of every Android-x86 build installed on the EeePC 1016P — from the EeePC-specific legacy image to modern desktop forks the hardware couldn't support.</p>
     </div>
   </div>
 </section>
 
 <section class="section-padding pt-0">
   <div class="container">
-    <div class="oslab-callout good"><strong>Android summary:</strong> Android-x86 7.1 R5 was the clear winner. The old Android-x86 4.0 R2 EeePC image had great shortcut support but was too outdated to use. Bliss OS, PrimeOS, and Phoenix OS were too heavy for the CPU and crashed.</div>
+    <div class="oslab-callout good"><strong>Android summary:</strong> among Android options, 7.1 R5 had no real competition. The legacy 4.0 R2 EeePC build had hardware-specific shortcut integration but its app stack had aged out. The desktop Android forks — Bliss, PrimeOS, Phoenix — needed processing power this netbook doesn't have.</div>
     <div class="oslab-grid">
       <div class="oslab-card">
         <h3>Android-x86 4.0 R2 EeePC</h3>
         <span class="oslab-tag good">Fn shortcuts work</span><span class="oslab-tag bad">Too outdated</span>
         <ul>
           <li>Shortcut keys and volume controls worked well.</li>
-          <li>Browsers were out of date and app APIs were broken.</li>
-          <li>Apps were no longer practically usable because support had moved on.</li>
+          <li>Browsers were several years behind current standards and most app APIs had moved on.</li>
+          <li>Nothing practically useful could run — the Android 4.0 app ecosystem dried up long ago.</li>
         </ul>
       </div>
       <div class="oslab-card">
         <h3>Android-x86 7.1 R5</h3>
         <span class="oslab-tag good">Best option</span><span class="oslab-tag info">Spotify works</span><span class="oslab-tag warn">Some apps crash</span>
         <ul>
-          <li>Trying to upgrade from Android-x86 4.0 R2 EeePC broke the OS.</li>
-          <li>A clean install of 7.1 R5 was required.</li>
-          <li>Smart Dock from F-Droid made the experience much better.</li>
-          <li>Chrome could play YouTube at 240p, but the YouTube app itself was no longer supported.</li>
+          <li>Upgrading in place from 4.0 R2 corrupted the install — that path doesn't work.</li>
+          <li>Starting fresh from the 7.1 R5 ISO was the only approach that held.</li>
+          <li>Smart Dock, pulled from F-Droid, replaced the default tablet-style interface with a real desktop layout.</li>
+          <li>Chrome handled YouTube at 240p, which was the practical ceiling. The YouTube app itself is past its supported API version on this Android release.</li>
         </ul>
       </div>
       <div class="oslab-card">
@@ -116,28 +116,28 @@
         <h3>Apps that failed on 7.1 R5</h3>
         <span class="oslab-tag bad">Crashes</span>
         <ul>
-          <li>Updated Chrome crashed</li>
-          <li>Netflix crashed</li>
-          <li>Plex crashed</li>
-          <li>YouTube app unsupported</li>
+          <li>Current Chrome builds crash on launch</li>
+          <li>Netflix fails immediately — no supported path on Android-x86 7.1</li>
+          <li>Plex crashes before reaching the library</li>
+          <li>YouTube app is past its API support window</li>
         </ul>
       </div>
       <div class="oslab-card">
         <h3>Bliss OS</h3>
         <span class="oslab-tag bad">Too heavy</span><span class="oslab-tag bad">Crashes</span>
         <ul>
-          <li>Could not be fully tested.</li>
-          <li>Loaded poorly and kept crashing.</li>
-          <li>Main limitation was the Atom N455 CPU.</li>
+          <li>Never stabilized enough to test properly.</li>
+          <li>Setup was slow and the system crashed repeatedly before reaching a usable state.</li>
+          <li>Bliss OS targets hardware with real multi-core performance — the N455 isn't it.</li>
         </ul>
       </div>
       <div class="oslab-card">
         <h3>PrimeOS and Phoenix OS</h3>
         <span class="oslab-tag bad">Too heavy</span><span class="oslab-tag bad">Unstable</span>
         <ul>
-          <li>Both were too much for a 1-core / 2-thread Atom.</li>
-          <li>They were unstable and could not be meaningfully evaluated.</li>
-          <li>The limitation was CPU first, not just the overall age of the laptop.</li>
+          <li>Neither could run stably on a single-core, 1.66 GHz processor.</li>
+          <li>Both crashed before any real app testing was possible.</li>
+          <li>Age isn't really the issue — these OSes assume processing headroom the N455 doesn't offer.</li>
         </ul>
       </div>
     </div>
