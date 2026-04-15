@@ -134,3 +134,10 @@ body.body-bg{background:var(--oslab-bg); color:var(--oslab-text);}
   .oslab-stat { padding: 14px; }
   .oslab-stat h4 { font-size: 20px; }
 }
+
+/* Responsive tables */
+.oslab-table-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.oslab-table-wrap .oslab-table { margin-top: 0; min-width: 500px; }
+@media (max-width: 600px) {
+  .oslab-table th, .oslab-table td { padding: 10px 8px; font-size: 13px; }
+}
