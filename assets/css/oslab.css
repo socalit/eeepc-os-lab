@@ -105,3 +105,32 @@ body.body-bg{background:var(--oslab-bg); color:var(--oslab-text);}
 .mobile-menu a:hover {
     color: #c0f748;
 }
+
+/* Card and stat icons */
+.oslab-card-icon { width: 48px; height: 48px; margin-bottom: 14px; display: block; }
+.oslab-stat-icon { width: 36px; height: 36px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
+
+/* Hardware photo grid — always a row on desktop, responsive below */
+.oslab-photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 36px; }
+.oslab-photo-grid figure { margin: 0; }
+.oslab-photo-grid img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--oslab-border); object-fit: cover; aspect-ratio: 4/3; cursor: zoom-in; transition: opacity .2s; display: block; }
+.oslab-photo-grid a:hover img { opacity: .85; }
+.oslab-photo-grid figcaption { font-size: 12px; color: var(--oslab-muted); text-align: center; margin-top: 6px; }
+@media (max-width: 768px) { .oslab-photo-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+@media (max-width: 480px) { .oslab-photo-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; } }
+
+/* Hero image mobile */
+@media (max-width: 991px) {
+  .oslab-hero-image { max-width: 100%; border-radius: 14px; }
+  .hero-section { padding-top: 100px; padding-bottom: 50px; }
+}
+@media (max-width: 480px) {
+  .hero-section { padding-top: 80px; padding-bottom: 36px; }
+  .oslab-hero-image { border-radius: 10px; }
+}
+
+/* Stat boxes — 4 in a row on desktop, 2x2 on mobile */
+@media (max-width: 767px) {
+  .oslab-stat { padding: 14px; }
+  .oslab-stat h4 { font-size: 20px; }
+}
