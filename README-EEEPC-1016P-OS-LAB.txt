@@ -1,1 +1,0 @@
-Updated ASUS EeePC 1016P site with a landing-page hero image area, expanded Android fork findings, working app notes, limitation summaries, and cleaned branding across the project.
